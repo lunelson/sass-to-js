@@ -1,0 +1,24 @@
+{
+  "name": "sass-to-js",
+  "version": "1.0.0",
+  "description": "Sass functions and mixins for exporting Sass maps as data via JSON in `body:before content` or `html font-family`, and JS functions for parsing them out in the client. Based partly on code from SassyJSON",
+  "main": "parse.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunelson/sass-to-js.git"
+  },
+  "keywords": [
+    "sass",
+    "js",
+    "json"
+  ],
+  "author": "Lu Nelson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lunelson/sass-to-js/issues"
+  },
+  "homepage": "https://github.com/lunelson/sass-to-js#readme"
+}
