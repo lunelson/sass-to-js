@@ -1,0 +1,2 @@
+- document note about sass map needing to be 'JSON-compliant';
+- throw error in code if sass map is not JSON-compliant, i.e. uses a non-string for keys
