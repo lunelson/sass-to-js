@@ -1,6 +1,6 @@
 {
   "name": "sass-to-js",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Sass functions and mixins for exporting Sass maps as data via JSON in `body:before content` or `html font-family`, and JS functions for parsing them out in the client. Based partly on code from SassyJSON",
   "main": "parse.js",
   "scripts": {
