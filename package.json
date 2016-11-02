@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/lunelson/sass-to-js/issues"
   },
-  "homepage": "https://github.com/lunelson/sass-to-js#readme"
+  "homepage": "https://github.com/lunelson/sass-to-js#readme",
+  "dependencies": {
+    "sass-throw": "lunelson/sass-throw"
+  }
 }

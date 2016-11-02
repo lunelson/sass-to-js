@@ -1,0 +1,14 @@
+//           _                                _       _
+//          | |                              | |     | |
+//  ___  ___| |_ ______ ___ ___ ___ ______ __| | __ _| |_ __ _
+// / __|/ _ \ __|______/ __/ __/ __|______/ _` |/ _` | __/ _` |
+// \__ \  __/ |_      | (__\__ \__ \     | (_| | (_| | || (_| |
+// |___/\___|\__|      \___|___/___/      \__,_|\__,_|\__\__,_|
+
+/* TODO
+  - document note about sass map needing to be 'JSON-compliant';
+  - throw error in code if sass map is not JSON-compliant, i.e. uses a non-string for keys
+ */
+
+@function set-css-data($map){} // use json-encode or whatever, internally
+
