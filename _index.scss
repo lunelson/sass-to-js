@@ -5,10 +5,25 @@
 // \__ \  __/ |_      | (__\__ \__ \     | (_| | (_| | || (_| |
 // |___/\___|\__|      \___|___/___/      \__,_|\__,_|\__\__,_|
 
-/* TODO
-  - document note about sass map needing to be 'JSON-compliant';
-  - throw error in code if sass map is not JSON-compliant, i.e. uses a non-string for keys
- */
+@mixin set-css-data($map){
 
-@function set-css-data($map){} // use json-encode or whatever, internally
+  @if not json-valid-map($map) { @include error('sass-to-js/set-css-data: $map is not JSON-compliant'); }
+
+  $json: json-stringify($map);
+
+  // All browsers except IE8-
+  body::before {
+    content: $json;
+    // This element must be in the render tree to get it via getComputedStyle(document.body, ':before');
+    display: block;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+  }
+
+  // All browsers except Opera (Presto based)
+  head {
+    font-family: $json;
+  }
+}
 
